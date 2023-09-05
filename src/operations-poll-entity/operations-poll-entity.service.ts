@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { OperationsRepositoryService } from '../operations-repository/operations-repository.service';
 import { EntityId } from '../model/EntityId';
 import { EntityStatus } from '../model/EntityStatus';
-import { EntityStatusDiff } from '../model/diff';
+import { EntityStatusDiff } from '../model/EntityStatusDiff';
 import { Operation } from '../model/Operation';
 
 @Injectable()

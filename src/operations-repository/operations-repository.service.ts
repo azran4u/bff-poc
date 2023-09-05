@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { EntityRepositoryService } from '../entity-repository/entity-repository.service';
+import { EntityRepositoryService } from '../entity-repository/entity-repository.interface';
 import { Operation } from '../model/Operation';
 import { EntityStatus } from '../model/EntityStatus';
 

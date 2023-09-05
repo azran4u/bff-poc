@@ -20,7 +20,7 @@ describe('OperationsRepositoryService', () => {
 
   it('should return value', async () => {
     const ids = ['1', '2'];
-    const res = await service.getStatusByIds(ids);
+    const res = await service.getStatusByWatchList(ids);
     expect(res.map((x) => x.id)).toEqual(ids);
   });
 });

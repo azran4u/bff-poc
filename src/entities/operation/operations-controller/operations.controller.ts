@@ -1,6 +1,6 @@
 import { Body, Controller, Post } from '@nestjs/common';
 import { OperationsRequestManagerService } from '../operations-request-manager/operations-request-manager.service';
-import { Operation } from '../model/Operation';
+import { Operation } from '../../../model/Operation';
 
 interface ListOfIdsDto {
   ids: string[];

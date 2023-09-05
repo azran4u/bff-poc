@@ -1,11 +1,12 @@
 import { Injectable } from '@nestjs/common';
-import { EntityRepositoryService } from '../entity-repository/entity-repository.interface';
-import { Operation } from '../model/Operation';
-import { EntityStatus } from '../model/EntityStatus';
+import { EntityRepositoryService } from '../../../utils/entity-repository/entity-repository.interface';
+import { Operation } from '../../../model/Operation';
+import { EntityStatus } from '../../../model/EntityStatus';
+import { EntityId } from '../../../model/EntityId';
 
 @Injectable()
 export class OperationsRepositoryService
-  implements EntityRepositoryService<Operation>
+  implements EntityRepositoryService<Operation, EntityId>
 {
   private version = 0;
   private operations: Operation[] = [];
@@ -16,7 +17,7 @@ export class OperationsRepositoryService
       .filter((op) => op !== undefined) as Operation[];
   }
 
-  async getStatusByIds(ids: string[]): Promise<EntityStatus[]> {
+  async getStatusByWatchList(ids: string[]): Promise<EntityStatus[]> {
     if (this.operations.length === 0) this.generate();
     return ids
       .map((id) => {

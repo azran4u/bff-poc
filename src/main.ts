@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { OperationsFetchManagerCronJobService } from './operations-fetch-manager-cron-job/operations-fetch-manager-cron-job.service';
-import { OperationsWatchListGarbageCollectorService } from './operations-watch-list-garbage-collector/operations-watch-list-garbage-collector.service';
+import { OperationsFetchManagerCronJobService } from './entities/operation/operations-fetch-manager-cron-job/operations-fetch-manager-cron-job.service';
+import { OperationsWatchListGarbageCollectorService } from './entities/operation/operations-watch-list-garbage-collector/operations-watch-list-garbage-collector.service';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);

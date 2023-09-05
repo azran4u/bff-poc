@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Post } from '@nestjs/common';
 import { OperationsRequestManagerService } from '../operations-request-manager/operations-request-manager.service';
 import { Operation } from '../model/Operation';
 

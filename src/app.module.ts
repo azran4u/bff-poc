@@ -9,7 +9,7 @@ import { OperationsFetchManagerService } from './operations-fetch-manager/operat
 import { OperationsPollEntityService } from './operations-poll-entity/operations-poll-entity.service';
 import { OperationsFetchManagerCronJobService } from './operations-fetch-manager-cron-job/operations-fetch-manager-cron-job.service';
 import { OperationsRequestManagerService } from './operations-request-manager/operations-request-manager.service';
-import { OperationsController } from './operations/operations.controller';
+import { OperationsController } from './operations-controller/operations.controller';
 
 @Module({
   imports: [],
